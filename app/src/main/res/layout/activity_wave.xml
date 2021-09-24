@@ -1,0 +1,224 @@
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:clipToPadding="false"
+    android:columnCount="4"
+    android:orientation="horizontal"
+    tools:context=".WaveFragment">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+
+    <com.jjoe64.graphview.GraphView
+        android:id="@+id/graph_fragment_one"
+        android:layout_width="100dp"
+        android:layout_height="75dp"
+        android:layout_row="0"
+        android:layout_column="0"
+        android:background="#FFFFFF"
+
+        android:gravity="center"
+        android:keepScreenOn="true"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+    <com.jjoe64.graphview.GraphView
+        android:id="@+id/graph_fragment_two"
+        android:layout_width="100dp"
+        android:layout_height="75dp"
+        android:layout_row="0"
+
+        android:layout_column="1"
+
+        android:background="#FFFFFF"
+        android:keepScreenOn="true"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+    <com.jjoe64.graphview.GraphView
+        android:id="@+id/graph_fragment_three"
+        android:layout_width="100dp"
+        android:layout_height="75dp"
+        android:layout_row="0"
+        android:layout_column="2"
+        android:background="#FFFFFF"
+
+        android:gravity="center"
+        android:keepScreenOn="true"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+    <com.jjoe64.graphview.GraphView
+        android:id="@+id/graph_fragment_four"
+        android:layout_width="100dp"
+        android:layout_height="75dp"
+        android:layout_row="0"
+        android:layout_column="3"
+        android:background="#FFFFFF"
+
+        android:gravity="center"
+        android:keepScreenOn="true"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+    <com.jjoe64.graphview.GraphView
+        android:id="@+id/graph_fragment_five"
+        android:layout_width="100dp"
+        android:layout_height="75dp"
+        android:layout_row="1"
+        android:layout_column="0"
+        android:background="#FFFFFF"
+
+        android:gravity="center"
+        android:keepScreenOn="true"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+    <com.jjoe64.graphview.GraphView
+        android:id="@+id/graph_fragment_six"
+        android:layout_width="100dp"
+        android:layout_height="75dp"
+        android:layout_row="1"
+        android:layout_column="1"
+        android:background="#FFFFFF"
+
+        android:gravity="center"
+        android:keepScreenOn="true"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+    <com.jjoe64.graphview.GraphView
+        android:id="@+id/graph_fragment_seven"
+        android:layout_width="100dp"
+        android:layout_height="75dp"
+        android:layout_row="1"
+        android:layout_column="2"
+        android:background="#FFFFFF"
+
+        android:gravity="center"
+        android:keepScreenOn="true"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+    <com.jjoe64.graphview.GraphView
+        android:id="@+id/graph_fragment_eight"
+        android:layout_width="100dp"
+        android:layout_height="75dp"
+        android:layout_row="1"
+        android:layout_column="3"
+        android:background="#FFFFFF"
+
+        android:gravity="center"
+        android:keepScreenOn="true"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+    <com.jjoe64.graphview.GraphView
+        android:id="@+id/graph_fragment_nine"
+        android:layout_width="100dp"
+        android:layout_height="75dp"
+        android:layout_row="2"
+        android:layout_column="0"
+        android:background="#FFFFFF"
+
+        android:gravity="center"
+        android:keepScreenOn="true"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+    <com.jjoe64.graphview.GraphView
+        android:id="@+id/graph_fragment_ten"
+        android:layout_width="100dp"
+        android:layout_height="75dp"
+        android:layout_row="2"
+        android:layout_column="1"
+        android:background="#FFFFFF"
+
+        android:gravity="center"
+        android:keepScreenOn="true"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+    <com.jjoe64.graphview.GraphView
+        android:id="@+id/graph_fragment_eleven"
+        android:layout_width="100dp"
+        android:layout_height="75dp"
+        android:layout_row="2"
+        android:layout_column="2"
+        android:background="#FFFFFF"
+
+        android:gravity="center"
+        android:keepScreenOn="true"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+    <com.jjoe64.graphview.GraphView
+        android:id="@+id/graph_fragment_twelve"
+        android:layout_width="100dp"
+        android:layout_height="75dp"
+        android:layout_row="2"
+        android:layout_column="3"
+        android:background="#FFFFFF"
+
+        android:gravity="center"
+        android:keepScreenOn="true"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+    <com.jjoe64.graphview.GraphView
+        android:id="@+id/graph_fragment_thirteen"
+        android:layout_width="100dp"
+        android:layout_height="75dp"
+        android:layout_row="3"
+        android:layout_column="0"
+        android:background="#FFFFFF"
+
+        android:gravity="center"
+        android:keepScreenOn="true"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+    <com.jjoe64.graphview.GraphView
+        android:id="@+id/graph_fragment_fourteen"
+        android:layout_width="100dp"
+        android:layout_height="75dp"
+        android:layout_row="3"
+        android:layout_column="1"
+        android:background="#FFFFFF"
+
+        android:gravity="center"
+        android:keepScreenOn="true"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+    <com.jjoe64.graphview.GraphView
+        android:id="@+id/graph_fragment_fifteen"
+        android:layout_width="100dp"
+        android:layout_height="75dp"
+        android:layout_row="3"
+        android:layout_column="2"
+        android:background="#FFFFFF"
+
+        android:gravity="center"
+        android:keepScreenOn="true"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+    <com.jjoe64.graphview.GraphView
+        android:id="@+id/graph_fragment_sixteen"
+        android:layout_width="100dp"
+        android:layout_height="75dp"
+        android:layout_row="3"
+        android:layout_column="3"
+        android:background="#FFFFFF"
+
+        android:gravity="center"
+        android:keepScreenOn="true"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+
+</GridLayout>
