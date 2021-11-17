@@ -12,6 +12,14 @@
         <entry key="app/src/main/res/layout/activity_homepage.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_image.xml" value="0.36770833333333336" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.3671875" />
+        <entry key="app/src/main/res/layout/activity_sound.xml" value="0.36770833333333336" />
+        <entry key="app/src/main/res/layout/activity_sound_processed_results.xml" value="0.36770833333333336" />
+        <entry key="app/src/main/res/layout/activity_wave.xml" value="0.36770833333333336" />
+        <entry key="app/src/main/res/layout/fragment_wave.xml" value="0.36770833333333336" />
+        <entry key="app/src/main/res/layout/player_sheet.xml" value="0.36770833333333336" />
+        <entry key="app/src/main/res/layout/progress_dialog.xml" value="0.36770833333333336" />
+        <entry key="app/src/main/res/layout/single_list_item.xml" value="0.36770833333333336" />
+        <entry key="app/src/main/res/layout/sound_wave_graph.xml" value="0.36770833333333336" />
       </map>
     </option>
   </component>
