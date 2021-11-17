@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: org.ejml:ejml-fsparse:0.40">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.ejml/ejml-fsparse/0.40/4a8dd52be2566057ba010e256e17dd02b5aa8a5b/ejml-fsparse-0.40.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.ejml/ejml-fsparse/0.40/1b935ff97c7c0101298a0add037357f90750639a/ejml-fsparse-0.40-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.ejml/ejml-fsparse/0.40/b88846755dca2274cc056daaf304b497979da086/ejml-fsparse-0.40-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
