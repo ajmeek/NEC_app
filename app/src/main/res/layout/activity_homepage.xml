@@ -114,10 +114,9 @@
         android:layout_marginEnd="30dp"
 
         android:text="Now you can see the receptive
-   \nfield filters associated to
-   \npredefined images and
-   \nsounds that look the same
-   \nto the ones that can be seen
+   \nfields generated from
+   \nimages and audio which
+   \nmatch the ones generated
    \nin your brain!"
         android:textColor="#FFFFFF"
         android:textSize="25sp"
