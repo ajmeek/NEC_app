@@ -327,6 +327,7 @@ public class audioList extends AppCompatActivity implements AudioListAdaptor.onI
 
     public class MyAsyncTaskAudio extends AsyncTask<Object, Integer, Boolean>{
         ProgressDialog progressSoundDialog = null;
+        //private ProgressDialog progressSoundDialog;
 
         @Override
         protected void onPreExecute() {
@@ -334,7 +335,7 @@ public class audioList extends AppCompatActivity implements AudioListAdaptor.onI
             progressSoundDialog = new ProgressDialog(audioList.this);
 
             progressSoundDialog.show();
-            progressSoundDialog.setIndeterminate(true);
+            //progressSoundDialog.setIndeterminate(true);
             progressSoundDialog.setContentView(R.layout.progress_dialog_sound);
             progressSoundDialog.getWindow().setBackgroundDrawableResource(android.R.color.transparent);
             progressSoundDialog.setCancelable(false);
