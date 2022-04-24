@@ -335,7 +335,7 @@ public class audioList extends AppCompatActivity implements AudioListAdaptor.onI
 
             progressSoundDialog.show();
             progressSoundDialog.setIndeterminate(true);
-            progressSoundDialog.setContentView(R.layout.progress_dialog);
+            progressSoundDialog.setContentView(R.layout.progress_dialog_sound);
             progressSoundDialog.getWindow().setBackgroundDrawableResource(android.R.color.transparent);
             progressSoundDialog.setCancelable(false);
 
