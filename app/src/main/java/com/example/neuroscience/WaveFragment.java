@@ -88,13 +88,13 @@ public class WaveFragment extends Fragment implements View.OnClickListener {
         int sampleSize = bm.length;
 
         // Get patches from buffer, around 3-5 ms recommended
-        double [][] audioPatches = AudioPatchHelper.getPatches(bm, sampleSize, 3, 55000);
+        double [][] audioPatches = AudioPatchHelper.getPatches(bm, sampleSize, 3, 10000);
         //double [][] audioTransposed = transpose(audioPatches);
 
         // Run fast ICA on audio patches
         FastICA fastICA = new FastICA();
         try {
-            fastICA.fit( audioPatches, 16);
+            fastICA.fit( audioPatches, 8);
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -111,7 +111,7 @@ public class WaveFragment extends Fragment implements View.OnClickListener {
         LineGraphSeries<DataPoint>  seriesSix = new LineGraphSeries<>();
         LineGraphSeries<DataPoint>  seriesSeven = new LineGraphSeries<>();
         LineGraphSeries<DataPoint>  seriesEight = new LineGraphSeries<>();
-
+/*
         LineGraphSeries<DataPoint>  seriesNine = new LineGraphSeries<>();
         LineGraphSeries<DataPoint>  seriesTen = new LineGraphSeries<>();
         LineGraphSeries<DataPoint>  seriesEleven = new LineGraphSeries<>();
@@ -121,7 +121,7 @@ public class WaveFragment extends Fragment implements View.OnClickListener {
         LineGraphSeries<DataPoint>  seriesFourteen = new LineGraphSeries<>();
         LineGraphSeries<DataPoint>  seriesFifteen = new LineGraphSeries<>();
         LineGraphSeries<DataPoint>  seriesSixteen = new LineGraphSeries<>();
-
+*/
         GraphView graph = (GraphView) rootView.findViewById(R.id.graph_fragment_one);
         GraphView graphTwo = (GraphView) rootView.findViewById(R.id.graph_fragment_two);
         GraphView graphThree = (GraphView) rootView.findViewById(R.id.graph_fragment_three);
@@ -131,7 +131,7 @@ public class WaveFragment extends Fragment implements View.OnClickListener {
         GraphView graphSix = (GraphView) rootView.findViewById(R.id.graph_fragment_six);
         GraphView graphSeven = (GraphView) rootView.findViewById(R.id.graph_fragment_seven);
         GraphView graphEight = (GraphView) rootView.findViewById(R.id.graph_fragment_eight);
-
+/*
         GraphView graphNine = (GraphView) rootView.findViewById(R.id.graph_fragment_nine);
         GraphView graphTen = (GraphView) rootView.findViewById(R.id.graph_fragment_ten);
         GraphView graphEleven = (GraphView) rootView.findViewById(R.id.graph_fragment_eleven);
@@ -141,7 +141,7 @@ public class WaveFragment extends Fragment implements View.OnClickListener {
         GraphView graphFourteen = (GraphView) rootView.findViewById(R.id.graph_fragment_fourteen);
         GraphView graphFifteen = (GraphView) rootView.findViewById(R.id.graph_fragment_fifteen);
         GraphView graphSixteen = (GraphView) rootView.findViewById(R.id.graph_fragment_sixteen);
-
+*/
         graph.getGridLabelRenderer().setHorizontalLabelsVisible(false);
         graph.getGridLabelRenderer().setVerticalLabelsVisible(false);
         graph.getGridLabelRenderer().setGridStyle(GridLabelRenderer.GridStyle.NONE);
@@ -197,7 +197,7 @@ public class WaveFragment extends Fragment implements View.OnClickListener {
         graphEight.getViewport().setDrawBorder(true);
         graphEight.getViewport().setXAxisBoundsManual(true);
         graphEight.getViewport().setMaxX(30);
-
+/*
         graphNine.getGridLabelRenderer().setHorizontalLabelsVisible(false);
         graphNine.getGridLabelRenderer().setVerticalLabelsVisible(false);
         graphNine.getGridLabelRenderer().setGridStyle(GridLabelRenderer.GridStyle.NONE);
@@ -253,7 +253,7 @@ public class WaveFragment extends Fragment implements View.OnClickListener {
         graphSixteen.getViewport().setDrawBorder(true);
         graphSixteen.getViewport().setXAxisBoundsManual(true);
         graphSixteen.getViewport().setMaxX(30);
-
+*/
 
         // Can be used to display raw audio patches
 
@@ -288,14 +288,14 @@ public class WaveFragment extends Fragment implements View.OnClickListener {
            seriesSix.appendData(new DataPoint(i, audioPatchesICA[5][i]), true, 30);
            seriesSeven.appendData(new DataPoint(i, audioPatchesICA[6][i]), true, 30);
            seriesEight.appendData(new DataPoint(i, audioPatchesICA[7][i]), true, 30);
-           seriesNine.appendData(new DataPoint(i, audioPatchesICA[8][i]), true, 30);
-           seriesTen.appendData(new DataPoint(i, audioPatchesICA[9][i]), true, 30);
-           seriesEleven.appendData(new DataPoint(i, audioPatchesICA[10][i]), true, 30);
-           seriesTwelve.appendData(new DataPoint(i, audioPatchesICA[11][i]), true, 30);
-           seriesThirteen.appendData(new DataPoint(i, audioPatchesICA[12][i]), true, 30);
-           seriesFourteen.appendData(new DataPoint(i, audioPatchesICA[13][i]), true, 30);
-           seriesFifteen.appendData(new DataPoint(i, audioPatchesICA[14][i]), true, 30);
-           seriesSixteen.appendData(new DataPoint(i, audioPatchesICA[15][i]), true, 30);
+//           seriesNine.appendData(new DataPoint(i, audioPatchesICA[8][i]), true, 30);
+//           seriesTen.appendData(new DataPoint(i, audioPatchesICA[9][i]), true, 30);
+//           seriesEleven.appendData(new DataPoint(i, audioPatchesICA[10][i]), true, 30);
+//           seriesTwelve.appendData(new DataPoint(i, audioPatchesICA[11][i]), true, 30);
+//           seriesThirteen.appendData(new DataPoint(i, audioPatchesICA[12][i]), true, 30);
+//           seriesFourteen.appendData(new DataPoint(i, audioPatchesICA[13][i]), true, 30);
+//           seriesFifteen.appendData(new DataPoint(i, audioPatchesICA[14][i]), true, 30);
+//           seriesSixteen.appendData(new DataPoint(i, audioPatchesICA[15][i]), true, 30);
         }
 
         series.setThickness(3);
@@ -307,7 +307,7 @@ public class WaveFragment extends Fragment implements View.OnClickListener {
         seriesSix.setThickness(3);
         seriesSeven.setThickness(3);
         seriesEight.setThickness(3);
-
+/*
         seriesNine.setThickness(3);
         seriesTen.setThickness(3);
         seriesEleven.setThickness(3);
@@ -317,7 +317,7 @@ public class WaveFragment extends Fragment implements View.OnClickListener {
         seriesFourteen.setThickness(3);
         seriesFifteen.setThickness(3);
         seriesSixteen.setThickness(3);
-
+*/
         graph.addSeries(series);
         graphTwo.addSeries(seriesTwo);
         graphThree.addSeries(seriesThree);
@@ -327,7 +327,7 @@ public class WaveFragment extends Fragment implements View.OnClickListener {
         graphSix.addSeries(seriesSix);
         graphSeven.addSeries(seriesSeven);
         graphEight.addSeries(seriesEight);
-
+/*
         graphNine.addSeries(seriesNine);
         graphTen.addSeries(seriesTen);
         graphEleven.addSeries(seriesEleven);
@@ -337,7 +337,7 @@ public class WaveFragment extends Fragment implements View.OnClickListener {
         graphFourteen.addSeries(seriesFourteen);
         graphFifteen.addSeries(seriesFifteen);
         graphSixteen.addSeries(seriesSixteen);
-
+*/
         return rootView;
     }
 
