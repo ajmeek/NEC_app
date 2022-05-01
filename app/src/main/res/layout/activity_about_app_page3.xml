@@ -34,11 +34,12 @@
 
     <TextView
         android:id="@+id/textView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="408dp"
+        android:layout_height="173dp"
         android:layout_marginTop="16dp"
         android:fontFamily="sans-serif-medium"
-        android:text="\tEvery time you see an image, or hear \na sound, your brain will activate some \n\t\t\tneurons, creating what are called \n\t\t\t\t\t\t\t\t\t\treceptive fields filters."
+        android:text="Every time you see an image, or hear a sound, different neurons are activated. Each neuron activates due to different stimuli, such as horizontal versus vertical edges. The portion of the sensory information that activates a single neuron is referred to as a &quot;receptive field&quot;."
+        android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
