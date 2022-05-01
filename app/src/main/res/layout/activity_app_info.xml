@@ -66,12 +66,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-medium"
-        android:text=" Mark V. Albert
-\n\t\tRyan Moye
-\n\t Kale Bruton
-\n Jeremy Lynch
-\nBrandon Staley
-\n\tNelson Alfaro"
+        android:text=" Mark V. Albert \n\t\tRyan Moye \n\t Kale Bruton \n Jeremy Lynch \nBrandon Staley \n\tNelson Alfaro\n\tAustin Meek"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -101,9 +96,8 @@
         android:layout_width="186dp"
         android:layout_height="58dp"
         android:fontFamily="sans-serif-medium"
-        android:text="University of North Texas
-        \n\t\t\t\t\t\t\tat Denton
-        \n\t\t\t\t\t\t\t\t\t2020"
+        android:text="University of North Texas\nDenton, Texas\n2020-2022"
+        android:textAlignment="center"
         android:textColor="#FFB408"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
