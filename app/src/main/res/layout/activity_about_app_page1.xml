@@ -16,7 +16,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.135"
-        app:srcCompat="@drawable/gallery_image_white512px" />
+        app:srcCompat="@drawable/brain" />
 
     <TextView
         android:id="@+id/textView"
