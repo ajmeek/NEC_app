@@ -1,44 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SoundProcessedResults">
+
+
+
 
     <ImageButton
         android:id="@+id/resultImage_Back_Btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#FFFFFF"
+        android:layout_marginTop="3dp"
+
+
+
+        android:background="#FAFAFA"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+
         app:layout_constraintHorizontal_bias="0.042"
         app:layout_constraintStart_toStartOf="parent"
+
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.041"
+        app:layout_constraintVertical_bias="0.037"
         app:srcCompat="@drawable/back_button_black35px"
-        tools:srcCompat="@drawable/back_button_black35px" />
+        tools:srcCompat="@drawable/back_button_black35px"
+         />
 
     <ImageButton
         android:id="@+id/resultImage_Home_Btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#FFFFFF"
+        android:background="#FAFAFA"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.955"
+        app:layout_constraintHorizontal_bias="0.928"
+
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+
         app:layout_constraintVertical_bias="0.023"
+        tools:srcCompat="@drawable/home_button_black48px"
         app:srcCompat="@drawable/home_button_black48px"
-        tools:srcCompat="@drawable/home_button_black48px" />
+        />
 
     <include
         android:id="@+id/include"
         layout="@layout/sound_wave_graph"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_width="match_parent"/>
+        />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

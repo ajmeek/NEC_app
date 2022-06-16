@@ -35,7 +35,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="3"
-            android:fontFamily="@font/open_sans_semibold"
+            android:fontFamily="@font/avenir"
             android:paddingTop="24dp"
             android:paddingBottom="24dp"
             android:text="Media Player"
@@ -47,7 +47,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="3"
-            android:fontFamily="@font/open_sans_semibold"
+            android:fontFamily="@font/avenir"
             android:paddingTop="16dp"
             android:paddingEnd="24dp"
             android:paddingBottom="24dp"
@@ -64,7 +64,7 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="116dp"
         android:layout_marginEnd="32dp"
-        android:fontFamily="@font/open_sans_semibold"
+        android:fontFamily="@font/avenir"
         android:text="File Name"
         android:textAlignment="center"
         android:textColor="@android:color/white"
@@ -124,6 +124,25 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.28"
         app:srcCompat="@drawable/process_button_white45px" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="151dp"
+        android:layout_marginEnd="152dp"
+        android:layout_marginBottom="227dp"
+        android:fontFamily="@font/avenir"
+        android:text="Process Sound"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <SeekBar
         android:id="@+id/player_seekBar"

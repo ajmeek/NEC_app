@@ -16,6 +16,7 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
+import android.media.Image;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Build;
@@ -43,7 +44,7 @@ import java.io.IOException;
 public class ImageActivity extends AppCompatActivity implements View.OnClickListener {
     ImageView photoPreview;
     ImageButton galleryButton, backButton, homeButton, cameraButton, processBlackAndWhiteImage;
-    TextView process;
+    TextView process, viewButton;
 
     private String currentPhotoPath;
     private Bitmap mResultsBitmap;
@@ -78,18 +79,21 @@ public class ImageActivity extends AppCompatActivity implements View.OnClickList
         backButton = findViewById(R.id.imageActivity_backBtn);
         homeButton = findViewById(R.id.imageActivity_homeBtn);
 
+        viewButton = findViewById(R.id.textView8);
         processBlackAndWhiteImage = findViewById(R.id.processBWImage_Btn);
         process = findViewById(R.id.textView2);
 
         //Hide image process button/text until photo is pushed to imageview
         processBlackAndWhiteImage.setVisibility(View.GONE);
         process.setVisibility(View.GONE);
+        viewButton.setVisibility(View.GONE);
 
         backButton.setOnClickListener(this);
         homeButton.setOnClickListener(this);
         galleryButton.setOnClickListener(this);
         cameraButton.setOnClickListener(this);
         processBlackAndWhiteImage.setOnClickListener(this);
+        viewButton.setOnClickListener(this);
 
     }//End of onCreate method
 
@@ -122,8 +126,15 @@ public class ImageActivity extends AppCompatActivity implements View.OnClickList
                 startActivityForResult(intent, RESULT_LOAD_IMAGE);
             break;
             case R.id.processBWImage_Btn:
+
                 new MyAsyncTask().execute();
+
                 //Toast.makeText(ImageActivity.this, "Finished processing Image!!!", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.textView8:
+                Intent ImageProcessedIntent = new Intent(ImageActivity.this, ImageProcessed.class);
+                startActivity(ImageProcessedIntent);
+                overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
                 break;
         }//End of switch
 
@@ -141,6 +152,7 @@ public class ImageActivity extends AppCompatActivity implements View.OnClickList
         else if (requestCode == REQUEST_IMAGE_CAPTURE && resultCode == RESULT_OK) {
             // Process the image and set it to the TextView
             processAndSetImage();
+
         } else {
             // Otherwise, delete the temporary image file
             BitmapUtils.deleteImageFile(this, currentPhotoPath);
@@ -148,6 +160,7 @@ public class ImageActivity extends AppCompatActivity implements View.OnClickList
 
         processBlackAndWhiteImage.setVisibility(View.VISIBLE);
         process.setVisibility(View.VISIBLE );
+        viewButton.setVisibility(View.VISIBLE);
     }//End of onActivityResult
 
 
@@ -293,8 +306,8 @@ public class ImageActivity extends AppCompatActivity implements View.OnClickList
                     photoPreview.setImageURI(imageURI);
                 }
             });
-
         }//End of heavyProcessImage
+
 
     }//End of MyAsyncTask
 

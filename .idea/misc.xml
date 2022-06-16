@@ -4,26 +4,51 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="../../../../../../../layout/custom_preview.xml" value="0.3828125" />
+        <entry key="app/src/main/res/drawable-v24/green_background.xml" value="0.147" />
+        <entry key="app/src/main/res/drawable-v24/ic_baseline_dehaze_24.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable-v24/ic_info.xml" value="0.147" />
+        <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.147" />
+        <entry key="app/src/main/res/drawable-v24/player_background.xml" value="0.1855" />
+        <entry key="app/src/main/res/drawable/app_background_color.xml" value="0.147" />
+        <entry key="app/src/main/res/drawable/bg_gradient.xml" value="0.185" />
+        <entry key="app/src/main/res/drawable/bg_round.xml" value="0.147" />
+        <entry key="app/src/main/res/drawable/ic_baseline_360_24.xml" value="0.185" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.147" />
+        <entry key="app/src/main/res/drawable/splash_activity.xml" value="0.185" />
+        <entry key="app/src/main/res/drawable/splash_background.xml" value="0.185" />
+        <entry key="app/src/main/res/font/avenir.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/font/avenir_black.xml" value="0.30885416666666665" />
+        <entry key="app/src/main/res/font/noway_regular.xml" value="0.3435185185185185" />
+        <entry key="app/src/main/res/font/open_sans_semibold.xml" value="0.3435185185185185" />
+        <entry key="app/src/main/res/font/rationale.xml" value="0.2722222222222222" />
+        <entry key="app/src/main/res/layout-land/activity_splash.xml" value="0.46458333333333335" />
+        <entry key="app/src/main/res/layout-w1240dp/activity_welcome.xml" value="0.214190093708166" />
+        <entry key="app/src/main/res/layout-w936dp/activity_welcome.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_about_app_page1.xml" value="0.36770833333333336" />
         <entry key="app/src/main/res/layout/activity_about_app_page2.xml" value="0.3671875" />
         <entry key="app/src/main/res/layout/activity_about_app_page3.xml" value="0.36770833333333336" />
         <entry key="app/src/main/res/layout/activity_about_app_page4.xml" value="0.36770833333333336" />
-        <entry key="app/src/main/res/layout/activity_app_info.xml" value="0.36770833333333336" />
+        <entry key="app/src/main/res/layout/activity_app_info.xml" value="0.345679012345679" />
         <entry key="app/src/main/res/layout/activity_audio_list.xml" value="0.36770833333333336" />
-        <entry key="app/src/main/res/layout/activity_homepage.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/activity_image.xml" value="0.36770833333333336" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.3671875" />
+        <entry key="app/src/main/res/layout/activity_homepage.xml" value="0.26888732910156254" />
+        <entry key="app/src/main/res/layout/activity_image.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_image_processed.xml" value="0.29376854599406527" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.31629392971246006" />
         <entry key="app/src/main/res/layout/activity_sound.xml" value="0.36770833333333336" />
         <entry key="app/src/main/res/layout/activity_sound_processed_results.xml" value="0.36770833333333336" />
+        <entry key="app/src/main/res/layout/activity_splash.xml" value="0.2860636393229168" />
+        <entry key="app/src/main/res/layout/activity_splash2.xml" value="0.31927083333333334" />
         <entry key="app/src/main/res/layout/activity_wave.xml" value="0.36770833333333336" />
+        <entry key="app/src/main/res/layout/activity_welcome.xml" value="0.3333333333333333" />
         <entry key="app/src/main/res/layout/fragment_wave.xml" value="0.36770833333333336" />
         <entry key="app/src/main/res/layout/player_sheet.xml" value="0.36770833333333336" />
         <entry key="app/src/main/res/layout/progress_dialog.xml" value="0.36770833333333336" />
         <entry key="app/src/main/res/layout/progress_dialog_sound.xml" value="0.36770833333333336" />
         <entry key="app/src/main/res/layout/single_list_item.xml" value="0.36770833333333336" />
         <entry key="app/src/main/res/layout/sound_wave_graph.xml" value="0.36770833333333336" />
-        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.3685" />
-        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.3685" />
+        <entry key="app/src/main/res/menu/info_menu.xml" value="0.3333333333333333" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1" />
       </map>
     </option>
   </component>

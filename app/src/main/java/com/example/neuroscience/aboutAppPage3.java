@@ -9,25 +9,27 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class aboutAppPage3 extends AppCompatActivity implements View.OnClickListener{
 
-    TextView skip3Button, next3Button;
+    TextView exit3Button, next3Button, back3Button;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_about_app_page3);
         getSupportActionBar().hide();
 
-        skip3Button = findViewById(R.id.skip3Btn);
+        back3Button = findViewById(R.id.back3Btn);
+        exit3Button = findViewById(R.id.exit3Btn);
         next3Button = findViewById(R.id.next3Btn);
 
-        skip3Button.setOnClickListener(this);
+        exit3Button.setOnClickListener(this);
         next3Button.setOnClickListener(this);
+        back3Button.setOnClickListener(this);
 
     }//End of onCreate
 
     @Override
     public void onClick(View v) {
         switch(v.getId()){
-            case R.id.skip3Btn:
+            case R.id.exit3Btn:
                 Intent homepageIntent = new Intent(aboutAppPage3.this, homepage.class);
                 startActivity(homepageIntent);
                 overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
@@ -36,6 +38,11 @@ public class aboutAppPage3 extends AppCompatActivity implements View.OnClickList
                 Intent page4Intent = new Intent(aboutAppPage3.this, aboutAppPage4.class);
                 startActivity(page4Intent);
                 overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
+                break;
+            case R.id.back3Btn:
+                Intent page2Intent = new Intent(aboutAppPage3.this, aboutAppPage2.class);
+                startActivity(page2Intent);
+                overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
                 break;
         }//End of switch
     }//End of onClick

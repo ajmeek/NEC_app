@@ -7,44 +7,33 @@
     android:background="#317173"
     tools:context=".aboutAppPage4">
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="122dp"
-        android:layout_height="118dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.228"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.225"
-        app:srcCompat="@drawable/data_grid_white512px" />
-
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="92dp"
-        android:fontFamily="sans-serif-black"
+        android:layout_marginTop="348dp"
+        android:fontFamily="@font/avenir"
         android:text="Why an App?"
-        android:textColor="#FFB408"
+        android:textColor="#A4CFCB"
         android:textSize="22sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView5"
-        android:layout_width="345dp"
-        android:layout_height="128dp"
-        android:layout_marginTop="28dp"
-        android:fontFamily="sans-serif-medium"
-        android:text="Now you can see the receptive fields present in your chosen pictures or audio recordings! Each one of the graphs you see is what a single neuron is wired to detect!"
+        android:layout_width="330dp"
+        android:layout_height="154dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/avenir"
+        android:text="With this app, you can see the receptive fields created by your chosen pictures or audio recordings. Each one of the graphs you see is what a single neuron is wired to detect!"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
@@ -52,24 +41,26 @@
         android:id="@+id/textView9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="sans-serif-black"
+        android:fontFamily="@font/avenir"
         android:text="4 OF 4"
-        android:textColor="#FFB408"
+        android:textColor="#A4CFCB"
         android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5"
-        app:layout_constraintVertical_bias="0.8" />
+        app:layout_constraintVertical_bias="0.801" />
 
     <TextView
         android:id="@+id/gotItBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="sans-serif-black"
+        android:fontFamily="@font/avenir"
         android:text="GOT IT"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.85"
@@ -79,16 +70,45 @@
 
     <ImageView
         android:id="@+id/imageView7"
-        android:layout_width="122dp"
-        android:layout_height="125dp"
-        android:layout_marginEnd="16dp"
+        android:layout_width="327dp"
+        android:layout_height="244dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="42dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/neuroapp" />
+
+    <TextView
+        android:id="@+id/back4Btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/avenir"
+        android:text="BACK"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.611"
-        app:layout_constraintStart_toEndOf="@+id/imageView2"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.22000003"
-        app:srcCompat="@drawable/wave_white512px" />
+        app:layout_constraintHorizontal_bias="0.077"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        app:layout_constraintVertical_bias="0.801" />
+
+    <TextView
+        android:id="@+id/exit4Btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/avenir"
+        android:text="ⓧ"
+        android:textColor="#FFFFFF"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

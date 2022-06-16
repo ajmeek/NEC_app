@@ -59,7 +59,7 @@ public class SoundProcessedResults extends AppCompatActivity implements View.OnC
 
                 Intent homePageIntent = new Intent(SoundProcessedResults.this, homepage.class);
                 startActivity(homePageIntent);
-                overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
+                overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
                 break;
 
 

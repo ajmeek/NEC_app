@@ -11,16 +11,17 @@
         android:id="@+id/textView10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="sans-serif-black"
-        android:text="About the App"
+        android:fontFamily="@font/avenir"
+        android:text="Developer Info"
         android:textColor="#FFFFFF"
         android:textSize="30sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.034" />
+        app:layout_constraintVertical_bias="0.069" />
 
     <ImageButton
         android:id="@+id/appInfo_backBtn"
@@ -33,77 +34,127 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.023"
-        app:srcCompat="@drawable/back_button_white35px" />
+        app:srcCompat="@drawable/back_button_white35px"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="147dp"
-        android:layout_height="123dp"
+        android:id="@+id/imageView23"
+        android:layout_width="100dp"
+        android:layout_height="130dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView10"
-        app:layout_constraintVertical_bias="0.055"
-        app:srcCompat="@drawable/pink_brain" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.183"
+        app:srcCompat="@drawable/biomedl" />
 
     <TextView
         android:id="@+id/textView11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="sans-serif-medium"
-        android:text="Developed by"
-        android:textColor="#FFB408"
+        android:fontFamily="@font/avenir"
+        android:text="Developed by:"
+        android:textColor="#A4CFCB"
         android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView6"
-        app:layout_constraintVertical_bias="0.078" />
+        app:layout_constraintVertical_bias="0.37"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="144dp"
+        tools:layout_editor_absoluteY="262dp" />
 
     <TextView
         android:id="@+id/textView12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="sans-serif-medium"
-        android:text=" Mark V. Albert \n\t\tRyan Moye \n\t Kale Bruton \n Jeremy Lynch \nBrandon Staley \n\tNelson Alfaro\n\tAustin Meek"
+        android:fontFamily="@font/avenir"
+        android:text=" \tMark V. Albert \n\tRyan Moye \n\t Kale Bruton \n\tJeremy Lynch \n\tBrandon Staley \n\tNelson Alfaro \n\tAustin Meek \n\tRhea Pookulangara \n\tAishwarya Balaji"
+        android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.507"
+
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView11"
-        app:layout_constraintVertical_bias="0.031" />
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.536" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/avenir"
+        android:text="Graphics by:"
+        android:textColor="#A4CFCB"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.715"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="144dp"
+        tools:layout_editor_absoluteY="262dp" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/avenir"
+        android:text="Anish Goel"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.758" />
 
     <TextView
         android:id="@+id/textView13"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="sans-serif-medium"
+        android:fontFamily="@font/avenir"
         android:text="Sponsored by: Biomedical AI Lab"
-        android:textColor="#FFB408"
+        android:textColor="#A4CFCB"
         android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView12"
-        app:layout_constraintVertical_bias="0.44" />
+        app:layout_constraintVertical_bias="0.826"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="87dp"
+        tools:layout_editor_absoluteY="582dp" />
 
     <TextView
         android:id="@+id/textView14"
         android:layout_width="186dp"
         android:layout_height="58dp"
-        android:fontFamily="sans-serif-medium"
+        android:fontFamily="@font/avenir"
         android:text="University of North Texas\nDenton, Texas\n2020-2022"
         android:textAlignment="center"
-        android:textColor="#FFB408"
+        android:textColor="#FFFFFF"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView13"
-        app:layout_constraintVertical_bias="0.135" />
+        app:layout_constraintVertical_bias="0.909"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="112dp"
+        tools:layout_editor_absoluteY="613dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

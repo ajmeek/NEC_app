@@ -47,6 +47,9 @@ public class audioList extends AppCompatActivity implements AudioListAdaptor.onI
     private Handler seekBarHandler;
     private Runnable updateSeekBar;
 
+    ImageButton homeButton;
+    ImageButton backButton;
+
     //ProgressDialog progressSoundDialog = null;
 
     //private ProgressDialog progressSoundDialog = null;
@@ -68,10 +71,14 @@ public class audioList extends AppCompatActivity implements AudioListAdaptor.onI
         playButton = findViewById(R.id.player_play_btn);
         playerSeekBar = findViewById(R.id.player_seekBar);
         processAudioButton = findViewById(R.id.process_audio_Btn);
+        homeButton = findViewById(R.id.audioList_homeBtn);
+        backButton = findViewById(R.id.audioList_backBtn);
 
 
         playButton.setOnClickListener(this);
         processAudioButton.setOnClickListener(this);
+        homeButton.setOnClickListener(this);
+        backButton.setOnClickListener(this);
 
         //Grab files from directory
         String path = audioList.this.getExternalFilesDir("/").getAbsolutePath();
@@ -264,6 +271,17 @@ public class audioList extends AppCompatActivity implements AudioListAdaptor.onI
                 startActivity(resultImageActivityIntent);
                 overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
                 break;
+            case R.id.audioList_homeBtn:
+                Intent homePageIntent = new Intent(audioList.this, homepage.class);
+                startActivity(homePageIntent);
+                overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
+                break;
+            case R.id.audioList_backBtn:
+                Intent audioActivityIntent = new Intent(audioList.this, SoundActivity.class);
+                startActivity(audioActivityIntent);
+                overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
+                break;
+
 
         }//End of switch case
     }//End of onClick method

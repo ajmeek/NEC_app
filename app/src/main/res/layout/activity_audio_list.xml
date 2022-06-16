@@ -10,10 +10,27 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/audio_list_view"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"/>
+
+    <ImageButton
+        android:id="@+id/audioList_backBtn"
+        android:layout_width="58dp"
+        android:layout_height="46dp"
+        android:background="#FAFAFA"
+        android:layout_gravity="left"
+        app:srcCompat="@drawable/back_button_black35px" />
+
+    <ImageButton
+        android:id="@+id/audioList_homeBtn"
+        android:layout_width="58dp"
+        android:layout_height="46dp"
+        android:background="#FAFAFA"
+        android:layout_gravity="end"
+        app:srcCompat="@drawable/home_button_black48px" />
 
     <include
-        layout="@layout/sound_wave_graph"/>
+        layout="@layout/sound_wave_graph" />
 
     <include layout="@layout/player_sheet" />
 

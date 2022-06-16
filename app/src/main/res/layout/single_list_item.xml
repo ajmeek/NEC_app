@@ -7,14 +7,15 @@
 
     <ImageView
         android:id="@+id/list_image_view"
-        android:layout_width="58dp"
-        android:layout_height="57dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:layout_marginStart="16dp"
         android:layout_marginBottom="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/list_play" />
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/fileplaydark" />
 
     <TextView
         android:id="@+id/list_file"
@@ -23,7 +24,9 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="12dp"
         android:text="Filename"
+        android:fontFamily="@font/avenir"
         android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/list_image_view"
         app:layout_constraintTop_toTopOf="@+id/list_image_view" />
 
@@ -33,6 +36,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginBottom="4dp"
+        android:fontFamily="@font/avenir"
         android:text="TextView"
         app:layout_constraintBottom_toBottomOf="@+id/list_image_view"
         app:layout_constraintStart_toEndOf="@+id/list_image_view" />

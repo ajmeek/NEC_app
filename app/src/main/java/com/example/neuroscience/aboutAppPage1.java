@@ -9,7 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class aboutAppPage1 extends AppCompatActivity implements View.OnClickListener {
 
-    TextView skip1Button, next1Button;
+    TextView exit1Button, next1Button, back1Button;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -18,20 +18,23 @@ public class aboutAppPage1 extends AppCompatActivity implements View.OnClickList
         //Get rid of action bar in this Class/Activity
         getSupportActionBar().hide();
 
-        skip1Button = findViewById(R.id.skip1Btn);
+        exit1Button = findViewById(R.id.exit1Btn);
         next1Button = findViewById(R.id.next1Btn);
+        back1Button = findViewById(R.id.back1Btn);
 
-        skip1Button.setOnClickListener(this);
+        exit1Button.setOnClickListener(this);
         next1Button.setOnClickListener(this);
+        back1Button.setOnClickListener(this);
 
     }//End of onCreate
 
     @Override
     public void onClick(View v) {
         switch(v.getId()){
-            case R.id.skip1Btn:
-                Intent homepageIntent = new Intent(aboutAppPage1.this, homepage.class);
-                startActivity(homepageIntent);
+            case R.id.exit1Btn:
+            case R.id.back1Btn:
+                Intent backIntent = new Intent(aboutAppPage1.this, homepage.class);
+                startActivity(backIntent);
                 overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
                 break;
             case R.id.next1Btn:
@@ -39,6 +42,7 @@ public class aboutAppPage1 extends AppCompatActivity implements View.OnClickList
                 startActivity(page2Intent);
                 overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
                 break;
+
 
         }//end of switch
 

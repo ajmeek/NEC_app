@@ -10,8 +10,7 @@
 
     <item
         android:id="@+id/appInfoBtn"
-        android:title="App Info"
-        app:showAsAction="never"
-                />
+        android:title="Developer Info"
+        app:showAsAction="never" />
 
 </menu>
