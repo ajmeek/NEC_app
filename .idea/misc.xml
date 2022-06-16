@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         <entry key="../../../../../../../layout/custom_preview.xml" value="0.3828125" />
         <entry key="app/src/main/res/drawable-v24/green_background.xml" value="0.147" />
         <entry key="app/src/main/res/drawable-v24/ic_baseline_dehaze_24.xml" value="0.1" />
@@ -51,12 +52,17 @@
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1" />
 =======
+=======
+>>>>>>> Stashed changes
         <entry key="app/src/main/res/layout/activity_about_app_page1.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_about_app_page2.xml" value="0.1157548125633232" />
         <entry key="app/src/main/res/layout/activity_about_app_page3.xml" value="0.1157548125633232" />
         <entry key="app/src/main/res/menu/info_menu.xml" value="0.1712962962962963" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.26564102564102565" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.26564102564102565" />
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
       </map>
     </option>

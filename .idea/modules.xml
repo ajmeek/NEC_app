@@ -2,11 +2,16 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+<<<<<<< Updated upstream
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/NEC_app.iml" filepath="$PROJECT_DIR$/.idea/modules/NEC_app.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/NEC_app.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/NEC_app.app.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/NEC_app.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/NEC_app.app.androidTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/NEC_app.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/NEC_app.app.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/NEC_app.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/NEC_app.app.unitTest.iml" />
+=======
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Neuroscience.iml" filepath="$PROJECT_DIR$/.idea/modules/Neuroscience.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Neuroscience.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Neuroscience.app.iml" />
+>>>>>>> Stashed changes
     </modules>
   </component>
 </project>
