@@ -4,11 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
+    android:background="#FAFAFA"
     tools:context=".Welcome">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/imageView6"
         android:layout_width="325dp"
         android:layout_height="160dp"
         android:layout_marginStart="40dp"
@@ -17,9 +17,9 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.065"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView25"
         app:layout_constraintVertical_bias="0.038"
-        app:srcCompat="@drawable/neurosense" />
+        app:srcCompat="@drawable/neurosensel" />
 
     <TextView
         android:id="@+id/textView2"
@@ -37,11 +37,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6"
         app:layout_constraintVertical_bias="0.105" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textView25"
         android:layout_width="278dp"
         android:layout_height="50dp"
         android:layout_marginBottom="548dp"

@@ -9,6 +9,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -17,6 +18,8 @@ import androidx.appcompat.app.AppCompatActivity;
 public class homepage extends AppCompatActivity implements View.OnClickListener{
 
     ImageButton imagesButton, soundsButton;
+    TextView startButton;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,9 +28,11 @@ public class homepage extends AppCompatActivity implements View.OnClickListener{
 
         imagesButton = findViewById(R.id.imageBtn);
         soundsButton = findViewById(R.id.soundsBtn);
+        startButton = findViewById(R.id.start);
 
         imagesButton.setOnClickListener(this);
         soundsButton.setOnClickListener(this);
+        startButton.setOnClickListener(this);
 
 
     }//End of onCreate
@@ -75,6 +80,10 @@ public class homepage extends AppCompatActivity implements View.OnClickListener{
                 startActivity(soundActivityIntent);
                 overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
                 break;
+            case R.id.start:
+                Intent start = new Intent(homepage.this, Welcome.class);
+                startActivity(start);
+                overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
         }//End of switch
 
     }//End of onClick
