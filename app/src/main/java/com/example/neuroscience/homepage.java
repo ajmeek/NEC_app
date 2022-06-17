@@ -18,7 +18,8 @@ import androidx.appcompat.app.AppCompatActivity;
 public class homepage extends AppCompatActivity implements View.OnClickListener{
 
     ImageButton imagesButton, soundsButton;
-    TextView startButton;
+    TextView exitWButton, nextWButton;
+    SharedPreferences prefs = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,11 +29,12 @@ public class homepage extends AppCompatActivity implements View.OnClickListener{
 
         imagesButton = findViewById(R.id.imageBtn);
         soundsButton = findViewById(R.id.soundsBtn);
-        startButton = findViewById(R.id.start);
+
 
         imagesButton.setOnClickListener(this);
         soundsButton.setOnClickListener(this);
-        startButton.setOnClickListener(this);
+
+        prefs = getSharedPreferences("com.example.neuroscience", MODE_PRIVATE);
 
 
     }//End of onCreate
@@ -80,11 +82,37 @@ public class homepage extends AppCompatActivity implements View.OnClickListener{
                 startActivity(soundActivityIntent);
                 overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
                 break;
-            case R.id.start:
-                Intent start = new Intent(homepage.this, Welcome.class);
-                startActivity(start);
+            case R.id.exitWBtn:
+                Intent backIntent = new Intent(homepage.this, homepage.class);
+                startActivity(backIntent);
+                overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
+                break;
+            case R.id.nextWBtn:
+                Intent page1Intent = new Intent(homepage.this, aboutAppPage1.class);
+                startActivity(page1Intent);
                 overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
+                break;
         }//End of switch
 
     }//End of onClick
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+
+        if (prefs.getBoolean("firstrun", true)) {
+            // Do first run stuff here then set 'firstrun' as false
+            setContentView(R.layout.activity_welcome);
+            getSupportActionBar().hide();
+
+            exitWButton = findViewById(R.id.exitWBtn);
+            nextWButton = findViewById(R.id.nextWBtn);
+
+
+            exitWButton.setOnClickListener(this);
+            nextWButton.setOnClickListener(this);
+            // using the following line to edit/commit prefs
+            prefs.edit().putBoolean("firstrun", false).apply();
+        }
+    }
 }//End of homepage

@@ -1,6 +1,7 @@
 package com.example.neuroscience;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
@@ -9,7 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class aboutAppPage1 extends AppCompatActivity implements View.OnClickListener {
 
-    TextView exit1Button, next1Button, back1Button;
+    TextView exit1Button, next1Button;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,11 +21,11 @@ public class aboutAppPage1 extends AppCompatActivity implements View.OnClickList
 
         exit1Button = findViewById(R.id.exit1Btn);
         next1Button = findViewById(R.id.next1Btn);
-        back1Button = findViewById(R.id.back1Btn);
+
 
         exit1Button.setOnClickListener(this);
         next1Button.setOnClickListener(this);
-        back1Button.setOnClickListener(this);
+
 
     }//End of onCreate
 
@@ -32,7 +33,6 @@ public class aboutAppPage1 extends AppCompatActivity implements View.OnClickList
     public void onClick(View v) {
         switch(v.getId()){
             case R.id.exit1Btn:
-            case R.id.back1Btn:
                 Intent backIntent = new Intent(aboutAppPage1.this, homepage.class);
                 startActivity(backIntent);
                 overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
