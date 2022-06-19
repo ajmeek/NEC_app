@@ -8,46 +8,52 @@
     tools:context=".aboutAppPage2">
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/imageView3"
         android:layout_width="327dp"
         android:layout_height="244dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.13999999"
+        app:layout_constraintVertical_bias="0.127"
+        app:layout_constraintHorizontal_bias="0.5"
         app:srcCompat="@drawable/neurosenseefficient" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="12dp"
         android:fontFamily="@font/avenir"
         android:text="What is Efficient Coding?"
         android:textColor="#A4CFCB"
         android:textSize="22sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:layout_constraintVertical_bias="0.083"/>
 
     <TextView
-        android:id="@+id/textView5"
-        android:layout_width="367dp"
-        android:layout_height="154dp"
+        android:id="@+id/textView26"
+        android:layout_width="300dp"
+        android:layout_height="259dp"
         android:layout_marginTop="16dp"
         android:fontFamily="@font/avenir"
-        android:text="Efficient coding is how the brain processes sensory information using the least number of neurons possible. Since this is the most efficient use of neurons, this is also the most efficient use of energy. Hence the name               coding."
+        android:text="Efficient coding is how the brain processes sensory information using the least number of neurons possible. Since this is the most efficient use of neurons, this is also the most efficient use of energy. Hence the name          _______  coding."
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textSize="20sp"
+        android:lineSpacingMultiplier="1.4"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.027" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.789"/>
+
 
     <TextView
         android:id="@+id/textView6"
@@ -58,15 +64,14 @@
         android:text="efficient"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
-        android:textSize="19.5sp"
+        android:textSize="19sp"
         android:textStyle="italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.7517"
+        app:layout_constraintHorizontal_bias="0.378"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.350" />
-
+        app:layout_constraintVertical_bias="0.68" />
 
     <TextView
         android:id="@+id/textView9"
@@ -80,8 +85,9 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5"
-        app:layout_constraintVertical_bias="0.801" />
+        app:layout_constraintTop_toBottomOf="@+id/textView26"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintVertical_bias="0.383" />
 
     <TextView
         android:id="@+id/back2Btn"
@@ -94,10 +100,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.078"
+        app:layout_constraintHorizontal_bias="0.12"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5"
-        app:layout_constraintVertical_bias="0.801" />
+        app:layout_constraintTop_toBottomOf="@+id/textView26"
+        app:layout_constraintVertical_bias="0.383" />
 
     <TextView
         android:id="@+id/exit2Btn"
@@ -124,10 +130,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.937"
+        app:layout_constraintHorizontal_bias="0.88"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5"
-        app:layout_constraintVertical_bias="0.801" />
+        app:layout_constraintTop_toBottomOf="@+id/textView26"
+        app:layout_constraintVertical_bias="0.383" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
