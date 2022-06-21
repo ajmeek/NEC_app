@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity;
 //import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.graphics.Bitmap;
+import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
@@ -33,6 +34,12 @@ public class ImageProcessed extends AppCompatActivity implements View.OnClickLis
         homeButton = findViewById(R.id.imageProcess_homeBtn);
         backButton = findViewById(R.id.imageProcess_backBtn);
         photoPreview = findViewById(R.id.picPreview);
+        Intent intent = getIntent();
+        String str = intent.getStringExtra("str");
+        Uri myUri = Uri.parse(str);
+        photoPreview.setImageURI(myUri);
+
+
 
         homeButton.setOnClickListener(this);
         backButton.setOnClickListener(this);

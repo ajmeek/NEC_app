@@ -194,13 +194,13 @@
         android:id="@+id/picPreview"
         android:layout_width="106dp"
         android:layout_height="71dp"
-        android:layout_marginStart="304dp"
+        android:layout_marginStart="156dp"
         android:layout_marginTop="132dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.202"
-        app:srcCompat="@drawable/brainblueback" />
+        app:layout_constraintVertical_bias="0.893"
+        app:srcCompat="@drawable/neurosensebrainm" />
 
     <TextView
         android:id="@+id/textView2"
