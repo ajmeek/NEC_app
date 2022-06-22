@@ -112,8 +112,8 @@
 
     <ImageView
         android:id="@+id/picPreview"
-        android:layout_width="410dp"
-        android:layout_height="379dp"
+        android:layout_width="248dp"
+        android:layout_height="231dp"
 
         android:layout_marginStart="116dp"
         android:layout_marginTop="459dp"
