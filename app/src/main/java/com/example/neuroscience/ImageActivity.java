@@ -133,6 +133,10 @@ public class ImageActivity extends AppCompatActivity implements View.OnClickList
                 break;
             case R.id.textView8:
                 Intent ImageProcessedIntent = new Intent(ImageActivity.this, ImageProcessed.class);
+                Bitmap test = imagePatches.showPatches(imagePatches.transpose(mixing), 25);
+                Uri imageURI = getImageUri(getBaseContext(), test);
+                String str = imageURI.toString();
+                ImageProcessedIntent.putExtra("str",str);
                 startActivity(ImageProcessedIntent);
                 overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
                 break;

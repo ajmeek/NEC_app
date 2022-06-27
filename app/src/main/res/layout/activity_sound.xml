@@ -18,24 +18,24 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
 
+
     <TextView
         android:id="@+id/recordFilename_TV"
-        android:layout_width="334dp"
-        android:layout_height="100dp"
+        android:layout_width="400dp"
+        android:layout_height="150dp"
         android:fontFamily="@font/avenir"
         android:gravity="center_horizontal"
+        android:lineSpacingMultiplier="1.4"
         android:text="Choose an audio file\n to be processed \nor press the microphone\n to record a new one:"
         android:textAlignment="center"
-        android:textSize="20sp"
-        android:lineSpacingMultiplier="1.1"
         android:textColor="#000000"
+        android:textSize="19.5sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.50"
+        app:layout_constraintHorizontal_bias="0.454"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.15" />
-
+        app:layout_constraintVertical_bias="0.124" />
 
     <Chronometer
         android:id="@+id/record_timer"

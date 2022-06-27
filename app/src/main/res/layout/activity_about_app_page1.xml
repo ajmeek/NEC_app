@@ -76,7 +76,7 @@
         android:layout_height="259dp"
         android:fontFamily="@font/avenir"
         android:lineSpacingMultiplier="1.4"
-        android:text=" Neurosense shows you how your brain has evolved to process natural images and audio clips such as: landscape portraits, environmental sounds, and human speech. This process uses efficient coding."
+        android:text=" Neurosense shows you how your brain processes natural images and audio clips such as: landscape portraits, environmental sounds, and human speech. This process uses efficient coding."
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textSize="20sp"

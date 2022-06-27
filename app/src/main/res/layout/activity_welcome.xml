@@ -25,6 +25,22 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView6"
         app:layout_constraintVertical_bias="0.129" />
 
+    <TextView
+        android:id="@+id/textView40"
+        android:layout_width="420dp"
+        android:layout_height="63dp"
+        android:fontFamily="@font/avenir"
+        android:text="You can access the following explanation again through the &quot;About App&quot; button in the menu "
+        android:textAlignment="center"
+        android:textColor="#1d6066"
+        android:textSize="17sp"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6"
+        app:layout_constraintVertical_bias="0.705" />
+
     <ImageView
         android:id="@+id/imageView6"
         android:layout_width="325dp"
