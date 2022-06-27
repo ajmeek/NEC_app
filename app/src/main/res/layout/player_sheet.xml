@@ -39,6 +39,7 @@
             android:paddingTop="24dp"
             android:paddingBottom="24dp"
             android:text="Media Player"
+            android:textAlignment="textStart"
             android:textColor="@android:color/white"
             android:textSize="16sp" />
 
@@ -48,7 +49,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="3"
             android:fontFamily="@font/avenir"
-            android:paddingTop="16dp"
+            android:paddingTop="24dp"
             android:paddingEnd="24dp"
             android:paddingBottom="24dp"
             android:text="Not Playing"
@@ -62,7 +63,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="116dp"
+        android:layout_marginTop="136dp"
         android:layout_marginEnd="32dp"
         android:fontFamily="@font/avenir"
         android:text="File Name"
@@ -78,13 +79,24 @@
         android:id="@+id/player_play_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="20dp"
         android:background="@color/colorPrimary"
         android:padding="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/player_fileName"
         app:srcCompat="@drawable/player_play_btn" />
+
+    <SeekBar
+        android:id="@+id/player_seekBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/player_play_btn"
+        app:layout_constraintVertical_bias="0.476" />
 
     <ImageButton
         android:id="@+id/imageView3"
@@ -96,6 +108,7 @@
         app:layout_constraintEnd_toStartOf="@+id/player_play_btn"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/player_play_btn"
+        app:layout_constraintVertical_bias="0.428"
         app:srcCompat="@drawable/player_rewind_btn" />
 
     <ImageButton
@@ -108,6 +121,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/player_play_btn"
         app:layout_constraintTop_toTopOf="@+id/player_play_btn"
+        app:layout_constraintVertical_bias="0.428"
         app:srcCompat="@drawable/player_forward_btn" />
 
 
@@ -119,20 +133,20 @@
         android:padding="16dp"
         app:layout_constraintBottom_toBottomOf="@+id/player_seekBar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.514"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.28"
+        app:layout_constraintVertical_bias="0.248"
         app:srcCompat="@drawable/process_button_white45px" />
 
     <TextView
         android:id="@+id/textView24"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="152dp"
-        android:layout_marginTop="151dp"
-        android:layout_marginEnd="152dp"
-        android:layout_marginBottom="227dp"
+        android:layout_marginStart="151dp"
+        android:layout_marginEnd="151dp"
+
+        android:layout_marginBottom="230dp"
         android:fontFamily="@font/avenir"
         android:text="Process Sound"
         android:textColor="@android:color/white"
@@ -140,19 +154,6 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <SeekBar
-        android:id="@+id/player_seekBar"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_margin="32dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/player_play_btn"
-        app:layout_constraintVertical_bias="0.734" />
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
