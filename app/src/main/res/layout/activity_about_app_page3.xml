@@ -42,7 +42,7 @@
         android:layout_height="259dp"
         android:layout_marginTop="16dp"
         android:fontFamily="@font/avenir"
-        android:text="Every time you see an image or hear a sound, you activate different neurons. For example, different colors stimulate neurons differently. A neural receptive field is a model of the signals your brain uses to analyze sensory information."
+        android:text="Every time you see an image or hear a sound, you activate different neurons. For example, unique colors stimulate unique neurons. A neural receptive field is a model of the signals your brain uses to analyze sensory information."
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textSize="20sp"
