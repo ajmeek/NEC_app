@@ -24,7 +24,7 @@ import static com.example.neuroscience.AudioPatchHelper.transpose;
  * Use the { SimpleFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class WaveFragment extends Fragment implements View.OnClickListener {
+public class WaveFragment extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -341,12 +341,12 @@ public class WaveFragment extends Fragment implements View.OnClickListener {
         return rootView;
     }
 
-    //TODO:Remove this function and its call
-    @Override
-    public void onClick(View v) {
-        //if (v.getId() == R.id.close_button){
-            //getActivity().getSupportFragmentManager().beginTransaction().remove(this).commit();
-        //}
-    }
+    //TODO:Remove this function and its call (DONE)
+//    @Override
+//    public void onClick(View v) {
+//        //if (v.getId() == R.id.close_button){
+//            //getActivity().getSupportFragmentManager().beginTransaction().remove(this).commit();
+//        //}
+//    }
 }
 

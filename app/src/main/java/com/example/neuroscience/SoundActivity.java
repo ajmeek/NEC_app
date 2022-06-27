@@ -1,5 +1,6 @@
 package com.example.neuroscience;
 
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
@@ -9,6 +10,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.media.MediaRecorder;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.SystemClock;
 import android.view.View;
@@ -61,6 +63,7 @@ public class SoundActivity extends AppCompatActivity implements View.OnClickList
     }//End of onCreate method
 
 
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     public void onClick(View v) {
         switch(v.getId()){
@@ -115,7 +118,7 @@ public class SoundActivity extends AppCompatActivity implements View.OnClickList
 
     private void stopRecording() {
         timer.stop();
-        recordFilename_TextView.setText("Recording Stopped... File Saved:\n" + recordFile);
+        recordFilename_TextView.setText("Recording stopped:\n" + recordFile + " was saved.\n Click on the file icon\n to choose a file for processing.");
         mediaRecorder.stop();
         mediaRecorder.release();
         mediaRecorder = null;
@@ -132,7 +135,7 @@ public class SoundActivity extends AppCompatActivity implements View.OnClickList
         Date now = new Date();
 
         recordFile = "Recording" + formatter.format(now);
-        recordFilename_TextView.setText("Recording...File name:\n" + recordFile);
+        recordFilename_TextView.setText("Recording:\n " + recordFile);
 
         mediaRecorder = new MediaRecorder();
         //Get access to phone MIC
