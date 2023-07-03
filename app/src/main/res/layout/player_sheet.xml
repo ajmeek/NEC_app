@@ -99,30 +99,30 @@
         app:layout_constraintVertical_bias="0.476" />
 
     <ImageButton
-        android:id="@+id/imageView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@color/colorPrimary"
-        android:padding="16dp"
-        app:layout_constraintBottom_toBottomOf="@+id/player_play_btn"
-        app:layout_constraintEnd_toStartOf="@+id/player_play_btn"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/player_play_btn"
-        app:layout_constraintVertical_bias="0.428"
-        app:srcCompat="@drawable/player_rewind_btn" />
+            android:id="@+id/player_rewind_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:padding="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/player_play_btn"
+            app:layout_constraintEnd_toStartOf="@+id/player_play_btn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/player_play_btn"
+            app:layout_constraintVertical_bias="0.428"
+            app:srcCompat="@drawable/player_rewind_btn" />
 
     <ImageButton
-        android:id="@+id/imageView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@color/colorPrimary"
-        android:padding="16dp"
-        app:layout_constraintBottom_toBottomOf="@+id/player_play_btn"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/player_play_btn"
-        app:layout_constraintTop_toTopOf="@+id/player_play_btn"
-        app:layout_constraintVertical_bias="0.428"
-        app:srcCompat="@drawable/player_forward_btn" />
+            android:id="@+id/player_skip_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:padding="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/player_play_btn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/player_play_btn"
+            app:layout_constraintTop_toTopOf="@+id/player_play_btn"
+            app:layout_constraintVertical_bias="0.428"
+            app:srcCompat="@drawable/player_skip_btn" />
 
 
     <ImageButton

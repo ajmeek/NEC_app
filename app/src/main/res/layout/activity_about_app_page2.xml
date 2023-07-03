@@ -8,33 +8,32 @@
     tools:context=".aboutAppPage2">
 
     <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="327dp"
-        android:layout_height="244dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.127"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:srcCompat="@drawable/neurosenseefficient" />
+            android:id="@+id/player_rewind_btn"
+            android:layout_width="327dp"
+            android:layout_height="244dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.151"
+            app:srcCompat="@drawable/neurosenseefficient" />
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:fontFamily="@font/avenir"
-        android:text="What is Efficient Coding?"
-        android:textColor="#A4CFCB"
-        android:textSize="22sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3"
-        app:layout_constraintVertical_bias="0.083"/>
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/avenir"
+            android:text="What is Efficient Coding?"
+            android:textColor="#A4CFCB"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/player_rewind_btn"
+            app:layout_constraintVertical_bias="0.054" />
 
     <TextView
         android:id="@+id/textView26"
@@ -56,22 +55,22 @@
 
 
     <TextView
-        android:id="@+id/textView6"
-        android:layout_width="100dp"
-        android:layout_height="27dp"
-        android:layout_marginTop="16dp"
-        android:fontFamily="@font/avenir"
-        android:text="efficient"
-        android:textAlignment="center"
-        android:textColor="#FFFFFF"
-        android:textSize="19sp"
-        android:textStyle="italic"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.54"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.68" />
+            android:id="@+id/textView6"
+            android:layout_width="100dp"
+            android:layout_height="27dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/avenir"
+            android:text="efficient"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="19sp"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.527"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:layout_constraintVertical_bias="0.688" />
 
     <TextView
         android:id="@+id/textView9"

@@ -124,22 +124,22 @@
         app:srcCompat="@drawable/blackcamera" />
 
     <TextView
-        android:id="@+id/textView6"
-        android:layout_width="86dp"
-        android:layout_height="50dp"
-        android:fontFamily="@font/avenir"
-        android:gravity="center"
-        android:text="Take\nPicture"
-        android:textColor="#000000"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.875"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/photoGallery_Btn"
-        app:layout_constraintVertical_bias="0.0"
+            android:id="@+id/textView6"
+            android:layout_width="86dp"
+            android:layout_height="50dp"
+            android:fontFamily="@font/avenir"
+            android:gravity="center"
+            android:text="Take\nPicture"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.876"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/photoGallery_Btn"
+            app:layout_constraintVertical_bias="0.0"
 
-        />
+            />
 
     <TextView
         android:id="@+id/textView"
@@ -158,76 +158,77 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
-        android:id="@+id/textView2"
-        android:layout_width="87dp"
-        android:layout_height="60dp"
-        android:gravity="center"
-        android:text="Process\nImage"
-        android:textColor="#000000"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/processBWImage_Btn"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <TextView
-        android:id="@+id/textView20"
-        android:layout_width="330dp"
-        android:layout_height="65dp"
-        android:fontFamily="@font/avenir"
-        android:lineSpacingMultiplier="1.1"
-        android:text="Choose an image to be processed \nor take a new one:"
-        android:textAlignment="center"
-        android:textColor="#000000"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.506"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/backgroundColor_imageActivity"
-        app:layout_constraintVertical_bias="0.105" />
+            android:id="@+id/textView20"
+            android:layout_width="330dp"
+            android:layout_height="65dp"
+            android:fontFamily="@font/avenir"
+            android:lineSpacingMultiplier="1.1"
+            android:text="Choose an image to be processed \nor take a new one"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.506"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/backgroundColor_imageActivity"
+            app:layout_constraintVertical_bias="0.06" />
 
     <ImageView
-        android:id="@+id/picPreview"
-        android:layout_width="126dp"
-        android:layout_height="85dp"
-        android:layout_marginBottom="240dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/neurosensebrainm" />
+            android:id="@+id/picPreview"
+            android:layout_width="126dp"
+            android:layout_height="85dp"
+            android:layout_marginBottom="188dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.322"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/white" />
 
     <ImageButton
-        android:id="@+id/processBWImage_Btn"
-        android:layout_width="67dp"
-        android:layout_height="57dp"
-        android:background="@color/colorPrimary"
-        android:backgroundTint="#FAFAFA"
-        android:onClick="onClick"
-        android:scaleType="fitCenter"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/backgroundColor_imageActivity"
-        app:layout_constraintVertical_bias="0.729"
-        app:srcCompat="@drawable/processblack" />
+            android:id="@+id/processBWImage_Btn"
+            android:layout_width="67dp"
+            android:layout_height="57dp"
+            android:background="@color/colorPrimary"
+            android:backgroundTint="#FAFAFA"
+            android:onClick="onClick"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/backgroundColor_imageActivity"
+            app:layout_constraintVertical_bias="0.762"
+            app:srcCompat="@drawable/processblack" />
 
     <TextView
-        android:id="@+id/textView8"
-        android:layout_width="87dp"
-        android:layout_height="60dp"
-        android:gravity="center"
-        android:text="View Closer"
-        android:textColor="#000000"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/backgroundColor_imageActivity"
-        app:layout_constraintVertical_bias="0.525" />
+            android:id="@+id/textView2"
+            android:layout_width="87dp"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:text="Process\nImage"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/processBWImage_Btn"
+            app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+            android:id="@+id/textView8"
+            android:layout_width="87dp"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:text="View Closer"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/backgroundColor_imageActivity"
+            app:layout_constraintVertical_bias="0.38"
+            app:layout_constraintHorizontal_bias="0.672" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
