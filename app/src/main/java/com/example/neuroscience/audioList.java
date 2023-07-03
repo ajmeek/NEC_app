@@ -13,6 +13,7 @@ import android.widget.ImageButton;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
+import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -42,11 +43,10 @@ public class audioList extends AppCompatActivity implements AudioListAdaptor.onI
     private boolean isPlaying = false;
     public File fileToPlay = null;
     private TextView playerHeader, playerFileName;
-    private ImageButton playButton, processAudioButton;
+    private ImageButton playButton, processAudioButton, skipButton, rewindButton;
     private SeekBar playerSeekBar;
     private Handler seekBarHandler;
     private Runnable updateSeekBar;
-
     ImageButton homeButton;
     ImageButton backButton;
 
@@ -73,12 +73,17 @@ public class audioList extends AppCompatActivity implements AudioListAdaptor.onI
         processAudioButton = findViewById(R.id.process_audio_Btn);
         homeButton = findViewById(R.id.audioList_homeBtn);
         backButton = findViewById(R.id.audioList_backBtn);
+        skipButton = findViewById(R.id.player_skip_btn);
+        rewindButton = findViewById(R.id.player_rewind_btn);
+
 
 
         playButton.setOnClickListener(this);
         processAudioButton.setOnClickListener(this);
         homeButton.setOnClickListener(this);
         backButton.setOnClickListener(this);
+        skipButton.setOnClickListener(this);
+        rewindButton.setOnClickListener(this);
 
         //Grab files from directory
         String path = audioList.this.getExternalFilesDir("/").getAbsolutePath();
@@ -187,10 +192,13 @@ public class audioList extends AppCompatActivity implements AudioListAdaptor.onI
     private void resumeAudio(){
         mediaPlayer.start();
         playButton.setImageResource(R.drawable.player_pause_btn);
+        playerHeader.setText("Playing");
         isPlaying = true;
+
 
         updateRunnable();
         seekBarHandler.postDelayed(updateSeekBar, 0);
+
 
     }
 
@@ -200,7 +208,7 @@ public class audioList extends AppCompatActivity implements AudioListAdaptor.onI
         playButton.setImageResource(R.drawable.player_play_btn);
         playerHeader.setText("Stopped");
         isPlaying = false;
-        mediaPlayer.stop();
+        mediaPlayer.pause();
         seekBarHandler.removeCallbacks(updateSeekBar);
     }
 
@@ -253,14 +261,28 @@ public class audioList extends AppCompatActivity implements AudioListAdaptor.onI
         };
     }//End of updateRunnable method
 
+
     @Override
     public void onClick(View view) {
+        int fileIndex;
         switch(view.getId()){
             case R.id.player_play_btn:
                 if(isPlaying){
                     pauseAudio();
-                }else{
-                    if(fileToPlay != null){
+                }
+                else if (playerHeader.getText().equals("Finished"))
+                {
+                    if (mediaPlayer.getCurrentPosition() != mediaPlayer.getDuration())
+                    {
+                        resumeAudio();
+                    }
+                    else
+                        playAudio(fileToPlay);
+                }
+                else
+                {
+                    if(fileToPlay != null)
+                    {
                         resumeAudio();
                     }
                 }
@@ -281,7 +303,47 @@ public class audioList extends AppCompatActivity implements AudioListAdaptor.onI
                 startActivity(audioActivityIntent);
                 overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
                 break;
+            case R.id.player_rewind_btn:
+                //if time < 3 seconds, play previous file, else, restart file from beginning
+                //if time < 3 seconds,
+                if (mediaPlayer.getCurrentPosition() > 3000)
+                {
+                    stopAudio();
+                    playAudio(fileToPlay);
+                }
+                else
+                {
+                    stopAudio();
+                    fileIndex = 1;
+                    for (int i = 0; i < allFiles.length; i++)
+                    {
+                        if (allFiles[i].equals(fileToPlay))
+                            fileIndex = i;
+                    }
 
+
+                    if (fileIndex == 0)
+                        fileToPlay = allFiles[allFiles.length - 1];
+                    else
+                        fileToPlay = allFiles[fileIndex - 1];
+                    playAudio(fileToPlay);
+                }
+                break;
+            case R.id.player_skip_btn:
+                // stop current file and play next file
+                stopAudio();
+                fileIndex = -1;
+                for (int i = 0; i < allFiles.length; i++)
+                {
+                    if (allFiles[i].equals(fileToPlay))
+                        fileIndex = i;
+                }
+                if (fileIndex == allFiles.length - 1)
+                    fileToPlay = allFiles[0];
+                else
+                    fileToPlay = allFiles[fileIndex+1];
+                playAudio(fileToPlay);
+                break;
 
         }//End of switch case
     }//End of onClick method
