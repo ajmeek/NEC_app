@@ -145,19 +145,19 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/picPreview"
-        android:layout_width="52dp"
-        android:layout_height="69dp"
+            android:id="@+id/picPreview"
+            android:layout_width="52dp"
+            android:layout_height="69dp"
 
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="648dp"
-        android:adjustViewBounds="true"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.956"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/neurosensebrainm"
-        tools:srcCompat="@drawable/neurosensebrainm" />
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="628dp"
+            android:adjustViewBounds="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.955"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/neurosensebrainm"
+            tools:srcCompat="@drawable/neurosensebrainm" />
 
     <androidx.constraintlayout.widget.Group
         android:id="@+id/group"
