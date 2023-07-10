@@ -1,5 +1,6 @@
 package com.example.neuroscience;
 
+import android.media.MediaPlayer;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
@@ -18,6 +19,7 @@ import android.widget.Chronometer;
 import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
+import com.google.android.material.bottomsheet.BottomSheetBehavior;
 
 import java.io.IOException;
 import java.text.SimpleDateFormat;
@@ -29,7 +31,8 @@ public class SoundActivity extends AppCompatActivity implements View.OnClickList
     private boolean isRecording = false;
     private int PERMISSION_CODE = 20;
     private String recordFile;
-
+    MediaPlayer mediaPlayer;
+    private boolean isPlaying = false;
     private String recordPermission = Manifest.permission.RECORD_AUDIO;
 
     private MediaRecorder mediaRecorder;
@@ -37,7 +40,7 @@ public class SoundActivity extends AppCompatActivity implements View.OnClickList
 
     //Button recordButton;
     TextView recordFilename_TextView;
-    ImageButton list_ImageButton, recordButton, backButton, homeButton;
+    ImageButton list_ImageButton, recordButton, playButton, backButton, homeButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,12 +55,15 @@ public class SoundActivity extends AppCompatActivity implements View.OnClickList
         recordFilename_TextView = findViewById(R.id.recordFilename_TV);
         timer = findViewById(R.id.record_timer);
         list_ImageButton = findViewById(R.id.recordList_Btn);
+        playButton = findViewById(R.id.play_Btn);
         backButton = findViewById(R.id.soundActivity_backBtn);
         homeButton = findViewById(R.id.soundActivity_homeBtn);
 
+        playButton.setVisibility(View.GONE);
 
         recordButton.setOnClickListener(this);
         list_ImageButton.setOnClickListener(this);
+        playButton.setOnClickListener(this);
         backButton.setOnClickListener(this);
         homeButton.setOnClickListener(this);
     }//End of onCreate method
@@ -99,11 +105,45 @@ public class SoundActivity extends AppCompatActivity implements View.OnClickList
                     alertDialog.setMessage("Are you sure you want to stop the recording?");
                     alertDialog.create().show();
                 }else{
+                    if (recordFile != null)
+                        playButton.setVisibility(View.GONE);
                     Intent audioListIntent = new Intent(SoundActivity.this, audioList.class);
                     startActivity(audioListIntent);
                     overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
                 }
                 break;
+            case R.id.play_Btn:
+                if (!isPlaying)
+                {
+                    mediaPlayer = new MediaPlayer();
+                    mediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                    @Override
+                    public void onCompletion(MediaPlayer mp) {
+                        isPlaying = false;
+                        mediaPlayer.pause();
+                        playButton.setImageResource(R.drawable.fileplaydark);
+                    }
+                });
+                    try
+                    {
+                        mediaPlayer.setDataSource(SoundActivity.this.getExternalFilesDir("/").getAbsolutePath() + "/" + recordFile);
+                        mediaPlayer.prepare();
+                        mediaPlayer.start();
+                    }
+                    catch (IOException e)
+                    {
+                        e.printStackTrace();
+                    }
+                    playButton.setImageResource(R.drawable.filepausedark);
+                    isPlaying = true;
+                }
+                else
+                {
+                    mediaPlayer.stop();
+                    playButton.setImageResource(R.drawable.fileplaydark);
+                    isPlaying = false;
+                }
+                    break;
             case R.id.soundActivity_backBtn:
             case R.id.soundActivity_homeBtn:
                 Intent homePageIntent = new Intent(SoundActivity.this, homepage.class);
@@ -121,6 +161,7 @@ public class SoundActivity extends AppCompatActivity implements View.OnClickList
         recordFilename_TextView.setText("Recording stopped:\n" + recordFile + " was saved.\n Click on the file icon\n to choose a file for processing.");
         mediaRecorder.stop();
         mediaRecorder.release();
+        playButton.setVisibility(View.VISIBLE);
         mediaRecorder = null;
     }
 
